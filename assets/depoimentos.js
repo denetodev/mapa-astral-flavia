@@ -58,10 +58,34 @@ window.DEPOIMENTOS = [
   },
 
 
-  // {
-  //   nome: '',
-  //   texto: '',
-  // },
+  {
+    nome: 'Cibele Martins Varao',
+    texto: 'Flavinha querida, como esse mundo dá voltas e como foi um presente ter convivido esses meses contigo! Quem diria que depois daquele curso de OFIPA tantos anos atrás nossas vidas se cruzariam assim. Que essa nova etapa da sua jornada seja incrível, cheia de experiências fantásticas e histórias pra contar. Aproveita muito, viva intensamente, você merece demais! E fico aqui na torcida pra que os astros façam com que nossas vidas se cruzem mais vezes! Beijo grande!',
+  },
+  {
+    nome: 'Luciana Caldas Silva',
+    texto: 'Flavinha, desejo muito sucesso na sua nova jornada. Que essa nova fase seja repleta de aventuras, conquistas e momentos especiais. Boa sorte e até logo! Luciana Caldas.',
+  },
+  {
+    nome: 'Carolina Soares Santos',
+    texto: 'Flavinha, hoje nos despedimos de você com um misto de alegria e saudade. Desejo que essa nova etapa em Nova York seja repleta de conquistas e muitos momentos felizes ao lado da sua família. Foi um privilégio caminhar um trecho dessa história com você. Muito sucesso nessa nova aventura! Carol Soares.',
+  },
+  {
+    nome: 'Maria Beatriz Cunha Alcantara',
+    texto: 'Que seu novo desafio seja incrível. Vá lá e brilhe muito! Beijos da Bia Alcântara.',
+  },
+  {
+    nome: 'Eloisa Maranho Heimbecher',
+    texto: 'Flavinha... que você seja muito feliz nessa nova jornada em NY!!!!',
+  },
+  {
+    nome: 'Marcio Sebastiao da Fonseca',
+    texto: 'Flavia, obrigado por todo o apoio, conselhos e parceria durante nossa convivência no CRM! Desejo a você e à sua família muito sucesso, felicidade e grandes realizações nesta nova e incrível jornada em Nova York. Um grande abraço a todos!',
+  },
+  {
+    nome: 'Rodrigo Caetano de Souza',
+    texto: 'Sucesso, Flavinha! Que venham muitos motivos para comemorar nessa nova caminhada! Foi um prazer trabalhar com você!!!',
+  },
 
 
   {
