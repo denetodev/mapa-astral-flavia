@@ -742,6 +742,12 @@ strong {
   border: 0;
 }
 
+/* Formato vertical (YouTube Shorts) — mantém o player num tamanho de "tela de celular" */
+.media__video--vertical {
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+}
+
 .media__gallery-text {
   font-size: 1.15rem;
   color: var(--paper-dim);
