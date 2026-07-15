@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa Astral de Uma Trajetória Extraordinária — Flávia Alves Brito Nunes</title>
+  <meta name="description"
+    content="Uma leitura celestial da trajetória de Flávia Alves Brito Nunes no Banco do Brasil — da equipe DIMAC/CRM, com todo carinho." />
+
+  <!-- Open Graph pra compartilhamento -->
+  <meta property="og:title" content="Mapa Astral de Uma Trajetória Extraordinária" />
+  <meta property="og:description"
+    content="Uma leitura celestial da jornada da Flavinha, com todo carinho da equipe DIMAC/CRM." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Céu estrelado global (background fixo) -->
+  <div class="starfield" aria-hidden="true">
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
+    <div class="stars stars-3"></div>
+    <div class="stars stars-constellation">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cruzeiro do Sul -->
+        <g>
+          <line class="constellation__line" x1="705" y1="110" x2="760" y2="470" />
+          <line class="constellation__line" x1="835" y1="290" x2="615" y2="255" />
+          <circle class="constellation__node" cx="705" cy="110" r="2.4" style="animation-delay:0s" />
+          <circle class="constellation__node" cx="835" cy="290" r="2" style="animation-delay:0.6s" />
+          <circle class="constellation__node" cx="760" cy="470" r="2.6" style="animation-delay:1.2s" />
+          <circle class="constellation__node" cx="615" cy="255" r="2" style="animation-delay:1.8s" />
+          <circle class="constellation__node" cx="690" cy="240" r="1.4" style="animation-delay:2.4s" />
+        </g>
+        <!-- Ursa Maior -->
+        <g>
+          <line class="constellation__line" x1="100" y1="620" x2="90" y2="700" />
+          <line class="constellation__line" x1="90" y1="700" x2="170" y2="720" />
+          <line class="constellation__line" x1="170" y1="720" x2="190" y2="650" />
+          <line class="constellation__line" x1="190" y1="650" x2="100" y2="620" />
+          <line class="constellation__line" x1="190" y1="650" x2="270" y2="630" />
+          <line class="constellation__line" x1="270" y1="630" x2="340" y2="600" />
+          <line class="constellation__line" x1="340" y1="600" x2="410" y2="560" />
+          <circle class="constellation__node" cx="100" cy="620" r="2" style="animation-delay:0.3s" />
+          <circle class="constellation__node" cx="90" cy="700" r="1.8" style="animation-delay:0.9s" />
+          <circle class="constellation__node" cx="170" cy="720" r="1.8" style="animation-delay:1.5s" />
+          <circle class="constellation__node" cx="190" cy="650" r="2.2" style="animation-delay:2.1s" />
+          <circle class="constellation__node" cx="270" cy="630" r="1.8" style="animation-delay:2.7s" />
+          <circle class="constellation__node" cx="340" cy="600" r="1.8" style="animation-delay:3.3s" />
+          <circle class="constellation__node" cx="410" cy="560" r="2.4" style="animation-delay:3.9s" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- HERO -->
+  <!-- ========================================== -->
+  <header class="hero">
+    <div class="hero__photo">
+      <picture>
+        <source media="(max-width: 560px)" srcset="assets/fotos/imgflavia-mobile.png" />
+        <img src="assets/fotos/imgflavia.png" alt="Flávia Alves Brito Nunes sorrindo à beira-mar" loading="eager"
+          fetchpriority="high" />
+      </picture>
+    </div>
+    <div class="hero__inner">
+
+      <h1 class="hero__subject">
+        <span class="sr-only">Mapa Astral de uma trajetória extraordinária — </span>Flávia
+      </h1>
+
+      <dl class="hero__coords">
+        <div class="hero__coord">
+          <dt>Nascimento</dt>
+          <dd>31 · III · 1981</dd>
+        </div>
+        <div class="hero__coord">
+          <dt>Local</dt>
+          <dd>Lauro de Freitas · BA</dd>
+        </div>
+        <div class="hero__coord">
+          <dt>Sol</dt>
+          <dd>♈ Áries</dd>
+        </div>
+        <div class="hero__coord">
+          <dt>Ascendente</dt>
+          <dd>♈ Áries</dd>
+        </div>
+      </dl>
+
+      <div class="hero__scroll">
+        <span>desça para a leitura</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ========================================== -->
+  <!-- PRELÚDIO -->
+  <!-- ========================================== -->
+  <section class="prelude reveal">
+    <div class="container container--narrow">
+      <p class="prelude__lead">
+        Hoje não vamos contar apenas uma história.
+      </p>
+      <p class="prelude__body">
+        Vamos interpretar um mapa astral. Um daqueles raros em que os astros parecem ter trabalhado <em>em equipe</em>
+        para desenhar uma jornada repleta de encontros marcantes, conquistas, aprendizado e propósito.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO I — SOL E ASCENDENTE EM ÁRIES -->
+  <!-- ========================================== -->
+  <section class="chapter reveal" id="capitulo-1">
+    <div class="chapter__marker">
+      <span class="chapter__roman">I</span>
+      <span class="chapter__label">Sol em Áries · Ascendente em Áries</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--right">
+      <div class="chapter__text">
+        <h2 class="chapter__title">A coragem de abrir caminho</h2>
+        <p>
+          Logo ao nascer, o céu revelou uma marca importante: <strong>Sol em Áries</strong>. E quem conhece os arianos
+          sabe — eles não esperam as oportunidades acontecerem. Eles as criam.
+        </p>
+        <p>
+          Como se não bastasse a estrutura ariana, esse céu ainda providenciou que a forma de se apresentar ao mundo
+          seguisse a mesma lógica: <em>ascendente também em Áries</em>. Sem descolamento entre estrutura e forma — como
+          todos a vemos.
+        </p>
+        <p>
+          Os astros ainda alinharam uma combinação especial: racionalidade e comunicação. Não por acaso, ela escolheu
+          trilhar dois caminhos que exigem exatamente esse equilíbrio — <strong>Direito e Marketing</strong>. Como se o
+          universo tivesse unido, num mesmo mapa, a capacidade de analisar e a habilidade de conectar pessoas.
+        </p>
+        <p class="chapter__aside">
+          Somam-se ainda a proatividade, a liderança, a empatia, a sensibilidade — e muito bom humor.
+        </p>
+      </div>
+
+      <figure class="chapter__figure">
+        <img src="assets/ilustracoes/Aries.png" alt="Ilustração do símbolo de Áries — carneiro entre estrelas"
+          loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <!-- <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div> -->
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO II — SINCRONICIDADE -->
+  <!-- ========================================== -->
+  <section class="chapter chapter--alt reveal" id="capitulo-2">
+    <div class="chapter__marker">
+      <span class="chapter__roman">II</span>
+      <span class="chapter__label">Sincronicidade · 2006</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--left">
+      <figure class="chapter__figure">
+        <img src="assets/ilustracoes/Amor.png" alt="Ilustração — dois caminhos que se encontram em uma sincronicidade"
+          loading="lazy" />
+      </figure>
+
+      <div class="chapter__text">
+        <h2 class="chapter__title">O encontro que virou constelação</h2>
+        <p>
+          Avançando alguns anos nesta leitura celestial, encontramos um alinhamento importante em <strong>2006</strong>.
+          Foi no antigo <em>NUCAC-Bahia</em>, no setor de análises de clientes para operações de crédito, que o destino
+          posicionou um personagem fundamental nesta constelação.
+        </p>
+        <p>
+          Ali ela conheceu <strong>Bruno</strong> — aquele que viria a ser seu companheiro de vida.
+        </p>
+        <p class="chapter__pullquote chapter__pullquote--cursive">
+          Dizem que alguns encontros acontecem por acaso. Jung provavelmente chamaria isso de <em>sincronicidade</em>.
+        </p>
+        <p>
+          Entre análises, projetos e conversas de trabalho, nasceu uma história que deixou de ser apenas profissional e
+          se transformou em parceria, amor e construção de futuro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <!-- <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div> -->
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO III — TRÂNSITOS -->
+  <!-- ========================================== -->
+  <section class="chapter reveal" id="capitulo-3">
+    <div class="chapter__marker">
+      <span class="chapter__roman">III</span>
+      <span class="chapter__label">Trânsitos planetários · 2009 – 2010</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--right">
+      <div class="chapter__text">
+        <h2 class="chapter__title">Novas órbitas, novas estrelas</h2>
+        <p>
+          Em seguida, o céu sinalizou uma mudança de órbita. Em <strong>abril de 2009</strong>, Brasília surgiu no
+          horizonte. Como todo grande trânsito planetário, a mudança trouxe desafios, descobertas e novas
+          possibilidades. Era o universo expandindo fronteiras e preparando o terreno para capítulos ainda maiores.
+        </p>
+        <p>
+          Pouco depois, em <strong>14 de maio de 2010</strong>, os astros registraram mais um evento memorável: <em>o
+            casamento</em>. A união de duas trajetórias que já seguiam na mesma direção desde aquele encontro
+          aparentemente comum de 2006.
+        </p>
+        <p>
+          E, como toda boa constelação, novas configurações passaram a guiar o caminho. Chegaram <strong>Alice</strong>
+          e <strong>Maria</strong>. Duas estrelas que transformaram o céu particular dessa família — e passaram a ocupar
+          o centro de gravidade de muitas das decisões, sonhos e conquistas que vieram depois.
+        </p>
+      </div>
+
+      <figure class="chapter__figure">
+        <img src="assets/ilustracoes/brasilia-casamento-2.webp.png"
+          alt="Ilustração — Brasília e casamento sob o céu estrelado" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <!-- <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div> -->
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO IV — ASCENSÃO -->
+  <!-- ========================================== -->
+  <section class="chapter chapter--alt reveal" id="capitulo-4">
+    <div class="chapter__marker">
+      <span class="chapter__roman">IV</span>
+      <span class="chapter__label">Ascensão · 2021 – 2023</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--left">
+      <figure class="chapter__figure">
+        <img src="assets/ilustracoes/Vitoria.png"
+          alt="Ilustração — figura levantando uma bandeira em direção às estrelas" loading="lazy" />
+      </figure>
+
+      <div class="chapter__text">
+        <h2 class="chapter__title">O selo cósmico</h2>
+        <p>
+          No campo profissional, os movimentos continuaram revelando oportunidades marcantes. Em um daqueles
+          alinhamentos que acontecem poucas vezes na carreira, ela assumiu <strong>a cadeira ocupada por Tarciana na
+            DIREC</strong> — justamente quando Tarciana passava a ocupar a Presidência do BB.
+        </p>
+        <p>
+          Para os astrólogos, existem momentos em que o universo nos convida a ocupar novos espaços — e, para uma
+          ariana, essa coragem parece natural. Para os colegas que acompanharam essa trajetória, foi apenas o
+          reconhecimento natural de alguém que havia construído credibilidade, conhecimento e respeito ao longo do
+          caminho.
+        </p>
+        <p>
+          E o céu ainda reservou mais uma confirmação. Em <strong>junho de 2023</strong>, veio a qualificação para o
+          <em>Programa de Executivos e Gestores no Exterior</em>. Uma espécie de selo cósmico — e também muito terreno —
+          de que aprendizado, excelência e evolução sempre fizeram parte do seu mapa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO V — RAÍZES -->
+  <!-- ========================================== -->
+  <section class="chapter reveal" id="capitulo-5">
+    <div class="chapter__marker">
+      <span class="chapter__roman">V</span>
+      <span class="chapter__label">Raízes · Bahia</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--right">
+      <div class="chapter__text">
+        <h2 class="chapter__title">As raízes que sustentam a jornada</h2>
+        <p>
+          Mas nenhum mapa astral é feito apenas de carreira. Ele também revela as características que tornam uma pessoa
+          única.
+        </p>
+        <p>
+          O interesse pelo que vai <em>além do que a ciência explica</em>. O senso de justiça e a busca pelo equilíbrio.
+          O orgulho de suas <strong>raízes baianas</strong>. A paixão pela culinária da Bahia.
+        </p>
+        <p class="interlude__pullquote">
+          E, claro, a convicção de que uma boa refeição fica ainda melhor com uma <em>generosa dose de pimenta</em> —
+          porque algumas pessoas simplesmente nasceram para dar mais sabor à vida.
+        </p>
+      </div>
+
+      <figure class="chapter__figure">
+        <img src="assets/ilustracoes/Pimenta.png" alt="Ilustração — mesa com pratos baianos e pimenta" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <!-- <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div> -->
+
+
+  <!-- ========================================== -->
+  <!-- CAPÍTULO VI — MERCÚRIO RETRÓGRADO EM CÂNCER -->
+  <!-- ========================================== -->
+  <section class="chapter chapter--special reveal" id="capitulo-6">
+    <div class="chapter__marker">
+      <span class="chapter__roman">VI</span>
+      <span class="chapter__label">Mercúrio Retrógrado em Câncer</span>
+    </div>
+
+    <div class="chapter__layout chapter__layout--center">
+      <figure class="chapter__figure chapter__figure--floating">
+        <img src="assets/ilustracoes/Cancer.png" alt="Ilustração — Mercúrio retrógrado em Câncer, o caranguejo"
+          loading="lazy" />
+      </figure>
+
+      <div class="chapter__text chapter__text--center">
+        <h2 class="chapter__title">Sobre revisitar histórias</h2>
+        <p>
+          Vale um registro curioso: ao contrário da fama que costuma carregar, até mesmo <em>Mercúrio Retrógrado</em>
+          tem seu lado positivo. É o período que nos convida a revisitar histórias, reconhecer aprendizados, valorizar
+          conexões e perceber o quanto crescemos ao longo da jornada.
+        </p>
+        <p class="cursive-line">
+          E este Mercúrio retrogradou em <strong>Câncer</strong> — que fala sobre afeto, família, cuidados, memória.
+        </p>
+        <p class="chapter__pullquote chapter__pullquote--center">
+          Talvez seja exatamente isso que estamos fazendo hoje. Revisitando uma trajetória admirável, reconhecendo
+          conquistas, celebrando encontros e agradecendo por tudo o que foi construído.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <!-- <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div> -->
+
+
+  <!-- ========================================== -->
+  <!-- REGISTROS — vídeo e galeria de fotos -->
+  <!-- O vídeo já é o definitivo; o link da galeria de fotos ainda é genérico/placeholder -->
+  <!-- ========================================== -->
+  <section class="media reveal" id="registros">
+    <div class="container container--narrow">
+      <div class="interlude__marker">
+        <span>Registros</span>
+        <span>·</span>
+        <span>Vídeo &amp; Fotos</span>
+      </div>
+
+      <p class="media__lead">
+        Nem tudo cabe em palavras. Por isso, guardamos também alguns momentos em movimento e em imagem.
+      </p>
+
+      <div class="media__video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EVD8fMVzWRU?si=6RVItcI75JzoOhFq"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="media__gallery">
+        <p class="media__gallery-text">E porque uma imagem vale por mil estrelas, reunimos mais registros dessa
+          trajetória num álbum à parte.</p>
+        <a class="media__gallery-link" href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">
+          Ver álbum de fotos ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Divisor estelar -->
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="35" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+      <path d="M50 4 L52 9 L57 10 L52 11 L50 16 L48 11 L43 10 L48 9 Z" fill="var(--gold-warm)" />
+      <line x1="65" y1="10" x2="100" y2="10" stroke="var(--gold-dim)" stroke-width="0.5" />
+    </svg>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- ENCERRAMENTO -->
+  <!-- ========================================== -->
+  <section class="finale reveal">
+    <div class="container container--narrow">
+
+      <p class="hero__eyebrow">
+        <span class="hero__dot"></span>
+        Uma leitura celestial · Novembro, 2026
+      </p>
+
+      <div class="hero__chart" aria-hidden="true">
+        <!-- Roda zodiacal SVG -->
+        <svg class="zodiac-wheel" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- Círculos concêntricos -->
+          <circle cx="200" cy="200" r="195" fill="none" stroke="var(--gold-star)" stroke-width="0.5" opacity="0.6" />
+          <circle cx="200" cy="200" r="175" fill="none" stroke="var(--gold-star)" stroke-width="0.4" opacity="0.5" />
+          <circle cx="200" cy="200" r="150" fill="none" stroke="var(--gold-star)" stroke-width="1" />
+          <circle cx="200" cy="200" r="115" fill="none" stroke="var(--gold-star)" stroke-width="0.4" opacity="0.4" />
+          <circle cx="200" cy="200" r="80" fill="none" stroke="var(--gold-star)" stroke-width="0.6" opacity="0.7" />
+
+          <!-- 12 divisões (casas astrológicas) -->
+          <g class="zodiac-wheel__spokes">
+            <!-- Linhas radiais a cada 30° -->
+            <line x1="200" y1="50" x2="200" y2="350" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+            <line x1="50" y1="200" x2="350" y2="200" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+            <line x1="87" y1="87" x2="313" y2="313" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+            <line x1="313" y1="87" x2="87" y2="313" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+            <line x1="125" y1="60" x2="275" y2="340" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+            <line x1="275" y1="60" x2="125" y2="340" stroke="var(--gold-star)" stroke-width="0.3" opacity="0.4" />
+          </g>
+
+          <!-- Símbolos do zodíaco (12) — posicionados em círculo -->
+          <g class="zodiac-wheel__signs" font-family="serif" font-size="18" fill="var(--gold-star)"
+            text-anchor="middle">
+            <text x="200" y="45">♈</text> <!-- Áries topo -->
+            <text x="275" y="65">♉</text> <!-- Touro -->
+            <text x="335" y="120">♊</text> <!-- Gêmeos -->
+            <text x="358" y="205">♋</text> <!-- Câncer -->
+            <text x="335" y="290">♌</text> <!-- Leão -->
+            <text x="275" y="345">♍</text> <!-- Virgem -->
+            <text x="200" y="365">♎</text> <!-- Libra -->
+            <text x="125" y="345">♏</text> <!-- Escorpião -->
+            <text x="65" y="290">♐</text> <!-- Sagitário -->
+            <text x="42" y="205">♑</text> <!-- Capricórnio -->
+            <text x="65" y="120">♒</text> <!-- Aquário -->
+            <text x="125" y="65">♓</text> <!-- Peixes -->
+          </g>
+
+          <!-- Destaque em Áries (topo) -->
+          <circle cx="200" cy="30" r="4" fill="var(--gold-warm)" />
+          <text x="200" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="var(--gold-warm)"
+            text-anchor="middle" opacity="0.9">SOL EM ÁRIES</text>
+
+          <!-- Estrela central -->
+          <g class="zodiac-wheel__center">
+            <circle cx="200" cy="200" r="3" fill="var(--gold-warm)" />
+            <circle cx="200" cy="200" r="8" fill="none" stroke="var(--gold-warm)" stroke-width="0.5" opacity="0.6" />
+          </g>
+        </svg>
+      </div>
+
+      <p class="finale__lead">A leitura dos astros deixa uma mensagem clara.</p>
+
+      <p class="finale__body">
+        Há ciclos que se encerram não porque chegaram ao fim, mas porque <em>estão prontos para alcançar um novo
+          nível</em>.
+      </p>
+
+      <p class="finale__body">
+        Por isso, hoje não nos despedimos de uma colega. Celebramos a conclusão de um capítulo brilhante — e o início de
+        uma nova fase, escrita com a mesma coragem ariana, a mesma competência profissional e a mesma energia
+        contagiante que sempre marcaram sua presença.
+      </p>
+
+      <p class="finale__closing">
+        E se os astros realmente têm razão, podemos ter certeza de uma coisa:
+      </p>
+
+      <p class="finale__quote">
+        Os próximos capítulos <em>já estão sendo escritos</em>.<br>
+        E prometem ser tão extraordinários quanto todos os anteriores.
+      </p>
+
+      <div class="finale__signature">
+        <div class="finale__signature-line"></div>
+        <p class="finale__signature-text">
+          <span>com todo carinho</span>
+          <strong>Equipe CRM</strong>
+          <span>Banco do Brasil · 2026</span>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
